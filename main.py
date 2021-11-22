@@ -11,5 +11,5 @@ if __name__ == '__main__':
     demand = [30, 25, 35, 40]
     UBtransportation.convert_ub_transportation_to_b(costs, supply, demand)
 
-    solution = Btransportation.transportation_simplex_method(supply, demand, costs)
+    solution = Btransportation.transportation_modi_method(supply, demand, costs)
     print('total cost: ', Btransportation.get_total_cost(costs, solution))

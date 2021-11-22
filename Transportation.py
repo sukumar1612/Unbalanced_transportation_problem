@@ -112,7 +112,7 @@ class Btransportation:
         return supply, demand, costs
 
     @staticmethod
-    def transportation_simplex_method(supply, demand, costs, penalties=None):
+    def transportation_modi_method(supply, demand, costs, penalties=None):
         balanced_supply, balanced_demand, balanced_costs = Btransportation.get_balanced_tp(
             supply, demand, costs
         )
